@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 0 10% 0 10%;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 128px;
+}
+
+#first-section {
+    background-color: #1F2937;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+#logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul {
+    list-style: None;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+#second-section {
+    padding: 16px 0 64px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 16px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#cards-container img {
+    height: auto;
+    width: 100%;
+    border: #3882F6 solid 4px;
+    border-radius: 16px;
+}
+
+#third-section {
+    background-color: #E5E7EB;
+}
+
+#fourth-section {
+    padding: 64px;
+}
+
+#call-to-action {
+    background-color: #3882F6;
+}
+
+#call-to-action .sign-up {
+    border: 2px solid white;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 24px;
+}
