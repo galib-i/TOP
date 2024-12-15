@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    background-color: #1E1F22;
+    font-family: system-ui;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #2B2D31;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    background: transparent;
+}
+
+#scoreboard {
+    background-color: #3F4147;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 5px 20px;
+}
+
+#game {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#game p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#player, #computer {
+    display: flex;
+    justify-content: center;
+    background-color: #313338;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+#computer .rps-option:{
+    filter: grayscale(100%);
+    cursor: not-allowed;
+}
+
+#player .rps-option {
+    cursor: pointer;
+}
+
+.rps-option {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    height: 200px;  
+    width: 200px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #1E1F22;
+    border-style: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+
+}
+
+.rps-option:hover {
+    background-color: #0F1012;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+.rps-option:active {
+    transform: translateY(4px);
+    transition-duration: .35s;
+}
+
+#player-rock, #computer-rock {
+    background-image: url("images/rock.png");
+
+}
+
+#player-paper, #computer-paper {
+    background-image: url("images/paper.png");
+}
+
+#player-scissors, #computer-scissors {
+    background-image: url("images/scissors.png");
+}
