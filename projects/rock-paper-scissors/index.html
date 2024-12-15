@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="rps.js"></script>-->
     <title>RPS</title>
 </head> 
 <body>
     <header>
         <h1>Rock, Paper, Scissors!</h1>
         <p id="scoreboard">Wins: 0 | Losses: 0 | Draws: 0</p>
-        <button id="reset-btn">Reset</button>
     </header>
-    <div id="game-screen">
-        <button class="rps-option" type="button"><img src="images/rock.png"></button>
-        <button class="rps-option" type="button"><img src="images/paper.png"></button>
-        <button class="rps-option" type="button"><img src="images/scissors.png"></button>
+    <div id="game">
+        <p>YOU</p>
+        <div id="player">
+            <button class="rps-option" id="player-rock" type="button"></button>
+            <button class="rps-option" id="player-paper" type="button"></button>
+            <button class="rps-option" id="player-scissors" type="button"></button>
+        </div>
+        <div id="computer">
+            <button class="rps-option" id="computer-rock" type="button"></button>
+            <button class="rps-option" id="computer-paper" type="button"></button>
+            <button class="rps-option" id="computer-scissors" type="button"></button>
+        </div>
+        <p>COMPUTER</p>
     </div>
+    <script src="rps.js"></script>
 </body>
 </html>

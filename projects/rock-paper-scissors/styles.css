@@ -53,8 +53,8 @@ h1 {
     margin: 0 5px;
 }
 
-#computer .rps-option:{
-    filter: grayscale(100%);
+#computer .rps-option{
+    background-color: #3F4147;
     cursor: not-allowed;
 }
 
