@@ -13,13 +13,12 @@
 body {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 aside {
   background-image: url(assets/background.jpg);
   background-size: cover;
-  height: 100vh;
-  width: 30%;
   min-width: 15rem;
   max-width: 30rem;
   flex: 1;
@@ -28,6 +27,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 #bg-img-credit {
@@ -65,7 +65,9 @@ main {
 }
 
 #page-detail {
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10rem 15rem 5rem 2rem;
 }
 
 form {
