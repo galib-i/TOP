@@ -101,21 +101,30 @@ form input {
   outline: none;
 }
 
-form input #first-name {
+#password:focus, #confirm-password:focus {
   outline: 2px solid red;
 }
+
 input:focus {
   outline: 2px solid lightblue;
 }
 
 fieldset {
-  border: 0;
+  border: none;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 button {
-
+  background-color: #596D48;
+  border: none;
+  font-weight: 600;
+  color: white;
+  padding: 15px 30px; /* Adjust padding to control size */
+  border-radius: 8px;
+  width: auto; /* Let the button size itself based on content */
+  margin-top: 20px; /* Add some spacing from the form elements */
 }
+
 
